@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>esteh.ehe survey</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title"><span>esteh</span>.ehe Survey Form</h1>
+      <p id="description">
+        Help us improve our products, your opinion matters to us.
+      </p>
+    </header>
+    <form id="survey-form" autocomplete="on">
+      <fieldset class="field one">
+        <label id="name-label" for="name"
+          >Name
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your name..."
+            autocomplete="on"
+            required
+        /></label>
+        <label id="email-label" for="email"
+          >Email
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email..."
+            autocomplete="on"
+            required
+        /></label>
+        <label id="number-label" for="number"
+          >Age
+          <input
+            id="number"
+            type="number"
+            min="8"
+            max="90"
+            placeholder="age"
+            required
+        /></label>
+        <label for="dropdown">What did you do for living?</label>
+        <select id="dropdown" required>
+          <option>(choose one)</option>
+          <option>Student</option>
+          <option>Self-Employed</option>
+          <option>Doctors / Teachers / Medical Workers</option>
+          <option>Fulltime Employee</option>
+          <option>Part-time Employee</option>
+          <option>Others</option>
+        </select>
+      </fieldset>
+      <fieldset class="fieldset two">
+        <p class="form-txt">Would you recommend us to a friend or family?</p>
+        <div class="checklist">
+          <label for="maybe">Maybe?</label
+          ><input id="maybe" type="radio" name="radio" value="maybe" />
+        </div>
+        <div class="checklist">
+          <label for="definitely">Definitely!</label
+          ><input
+            id="definitely"
+            type="radio"
+            name="radio"
+            value="definitely"
+          />
+        </div>
+        <div class="checklist">
+          <label for="notsure">I'm not sure</label
+          ><input id="notsure" type="radio" name="radio" value="not sure" />
+        </div>
+      </fieldset>
+      <fieldset class="fieldset three">
+        <p class="form-txt">Which flavor is your favourite?</p>
+        <div class="checklist">
+          <label for="moonshine">Moonshine</label
+          ><input id="moonshine" type="checkbox" value="moonshine" />
+        </div>
+        <div class="checklist">
+          <label for="morningdew">Morning Dew</label
+          ><input id="morningdew" type="checkbox" value="morning_dew" />
+        </div>
+        <div class="checklist">
+          <label for="snowfall">Snow Fall</label
+          ><input id="snowfall" type="checkbox" value="snow_fall" />
+        </div>
+        <div class="checklist">
+          <label for="voidgalaxy">Void Galaxy</label
+          ><input id="voidgalaxy" type="checkbox" value="void_galaxy" />
+        </div>
+        <div class="checklist">
+          <label for="summertime">Summer Time</label
+          ><input id="summertime" type="checkbox" value="summer_time" />
+        </div>
+      </fieldset>
+      <fieldset class="fieldset-four">
+        <p class="form-txt">
+          If you don't mind, we'd like to hear your comments and suggestions
+        </p>
+        <textarea
+          placeholder="write your comments or suggestions..."
+          autocomplete="off"
+          name="suggestions"
+        ></textarea>
+      </fieldset>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
